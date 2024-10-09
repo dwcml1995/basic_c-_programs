@@ -1,0 +1,49 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApp1
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            //Console.WriteLine("Please input a number"); //takes input from user
+            //string userInput = Console.ReadLine(); //reads the line and converts the user input to a string incase its entered as such
+            //int number = int.Parse(userInput); //assigns number as an int, then parses the user input 
+            //int result = number * 50; //result is assigned as an int and multiples int number by 50
+            //Console.WriteLine(result); //console displays the result
+            //Console.ReadLine(); //console stays open 
+
+            //Console.WriteLine("Please input a number");
+            //string userInput = Console.ReadLine();
+            //int number = int.Parse(userInput);
+            //int result = number + 25;
+            //Console.WriteLine(result);
+            //Console.ReadLine();
+
+            //Console.WriteLine("Please input a number");
+            //string userInput = Console.ReadLine();
+            //float number = int.Parse(userInput);
+            //float result = number / 12.5f;
+            //Console.WriteLine(result);
+            //Console.ReadLine(); 
+
+            //Console.WriteLine("Please input a number");
+            //string userInput = Console.ReadLine();
+            //int number = int.Parse(userInput);
+            //bool result = number >= 50;
+            //Console.WriteLine(result);
+            //Console.ReadLine();
+
+            Console.WriteLine("Please input a number");
+            string userInput = Console.ReadLine();
+            int number = int.Parse(userInput);
+            int remainder = number % 7;
+            Console.WriteLine(remainder);
+            Console.ReadLine();
+        }
+    }
+}
