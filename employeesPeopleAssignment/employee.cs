@@ -10,4 +10,5 @@ namespace employees_people
     {
         public int id {  get; set; } //set the property for id
     }
+    public virtual void SayName() //implemented the sayname method in the class 
 }
