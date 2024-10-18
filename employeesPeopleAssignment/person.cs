@@ -10,9 +10,6 @@ namespace employees_people
     {
         public string firstName { get; set; } //property of first name
         public string lastName { get; set; } //property of last name
-        public void sayName() //void method that prints the users name to the console
-            {
-                Console.WriteLine("Name: " + firstName + " " + lastName); //prints name
-            }
+        public abstract void sayName(); //void method that prints the users name to the console
     }
 }
