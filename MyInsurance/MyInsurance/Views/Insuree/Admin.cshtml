@@ -1,0 +1,43 @@
+﻿@model IEnumerable<MyInsurance.Models.Insuree>
+
+<h2>Admin View</h2>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.First().FirstName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.First().LastName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.First().Quote)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var insuree in Model)
+        {
+<tr>
+    <td>
+        @Html.DisplayFor(modelItem => insuree.FirstName)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => insuree.LastName)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => insuree.Quote)
+    </td>
+    <td>
+        @Html.ActionLink("Edit", "Edit", new { id = insuree.Id }) |
+        @Html.ActionLink("Delete", "Delete", new { id = insuree.Id })
+    </td>
+</tr>}
+    </tbody>
+</table>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
